@@ -12,5 +12,5 @@ docker push amr24/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=amr24/multi-server:$SHA
-kubectl set image deployments/client-deployment server=amr24/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=amr24/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=amr24/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=amr24/multi-worker:$SHA
