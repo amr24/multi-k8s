@@ -1,3 +1,4 @@
+#example of combining two configs in one file
 apiVersion: apps/v1
 kind: Deployment
 metadata:
